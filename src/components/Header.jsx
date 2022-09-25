@@ -1,17 +1,18 @@
 import React from 'react'
 import img from '../storage/grantut_logo.png'
 import '../css/_header.css'
+import { Link } from 'react-router-dom'
 
 function Header(props) {
   return (
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
-      <img class="my-0 mr-md-auto" src={img}/>
+      <Link class="my-0 mr-md-auto" to="/"><img class="" src={img}/></Link>
       <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="https://getbootstrap.com/docs/4.0/examples/pricing/#">Проекты</a>
-        <a class="p-2 text-dark" href="https://getbootstrap.com/docs/4.0/examples/pricing/#">Мои проекты</a>
-        <a class="p-2 text-dark" href="https://getbootstrap.com/docs/4.0/examples/pricing/#">Подать заявку</a>
+        <Link class="p-2 text-dark" to="/projects">Проекты</Link>
+        <Link class="p-2 text-dark" to="/myprojects">Мои проекты</Link>
+        <Link class="p-2 text-dark" to="/postproject">Подать заявку</Link>
       </nav>
-      <a class="btn btn-outline-primary" href="https://getbootstrap.com/docs/4.0/examples/pricing/#">Sign up</a>
+      <Link class="btn btn-outline-primary" to="/login">Sign up</Link>
     </div>
   )
 }

@@ -2,42 +2,34 @@ import React from 'react'
 
 function Footer(props) {
   return (
-    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="container">
+      <footer class="py-5">
         <div class="row">
-          <div class="col-12 col-md">
-            <small class="d-block mb-3 text-muted">© 2017-2018</small>
+          <div class="col-2">
+            <h5>О нас</h5>
+            <h5>Q/A</h5>
+            <h5>Контакты</h5>
           </div>
-          <div class="col-6 col-md">
-            <h5>Features</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="#">Cool stuff</a></li>
-              <li><a class="text-muted" href="#">Random feature</a></li>
-              <li><a class="text-muted" href="#">Team feature</a></li>
-              <li><a class="text-muted" href="#">Stuff for developers</a></li>
-              <li><a class="text-muted" href="#">Another one</a></li>
-              <li><a class="text-muted" href="#">Last time</a></li>
+    
+          <div class="col-2">
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">info@mediainsider.kz</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">+7 727 243 47 90</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Алматы қ., Жандосов к-сі, 98, (Навой) </a></li>
             </ul>
           </div>
-          <div class="col-6 col-md">
-            <h5>Resources</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="#">Resource</a></li>
-              <li><a class="text-muted" href="#">Resource name</a></li>
-              <li><a class="text-muted" href="#">Another resource</a></li>
-              <li><a class="text-muted" href="#">Final resource</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>About</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="#">Team</a></li>
-              <li><a class="text-muted" href="#">Locations</a></li>
-              <li><a class="text-muted" href="#">Privacy</a></li>
-              <li><a class="text-muted" href="#">Terms</a></li>
-            </ul>
+    
+    
+          <div class="col-4 offset-1">
+            <form>
+              <p>© 2022, 5Q media. Все права защищены.
+
+                Сайт использует IP адреса, cookie и данные геолокации Пользователей сайта</p>
+            </form>
           </div>
         </div>
       </footer>
+    </div>
   )
 }
 
